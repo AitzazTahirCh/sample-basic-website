@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> <!--CSS stylesheet-->
+    <title>Aitzaz Tahir Ch</title>
+    
+</head>
+<body>
+    <nav> <!--Nav bar-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.pdf">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+    <!--Picture-->
+    <div id="mypic">
+        <figure>
+            <img src="pic.jpg" alt="Aitzaz pic" height="200pt" >
+            <figcaption>" Life isn't about finding yourself. <br> It's about creating yourself. "
+            </figcaption>
+        </figure>
+    </div>
+    <!--Data-->
+    <div class="data">
+        <dl>
+            <dt><h2><u>Education:</u></h2></dt>
+            <dd>
+                Bachelors in Computer Science
+                <br><b>FAST-NUCES</b>
+            </dd>
+            <hr>
+            <dt><h2><u>Experience:</u></h2></dt>
+            <dd>
+                    Coding/Programming
+                    <br>System Administration
+                    <br>Web Development
+                    <br>System integration
+                    <br>Fixing bugs
+            </dd>
+            <hr>
+            <dt><h2><u>Projects:</u></h2></dt>
+            <dd>
+                Online Hospital Management System (PHP, MySQL, Javascript, CSS, Html etc.)
+                <br>Brick Breaker (Assembly Language)
+                <br>OSPF Simulation (Pyhton, Multi-threading, Pygame)
+                <br>School Management System (PHP, MySQL, CSS, Bootstrap etc.)
+                <br>First person shooting game (Unreal Engine)  
+            </dd>
+        </dl>
+    </div>
+<!--Form with javascript functions enabled-->
+    <form name="form1">
+        <h2><u>Contact Me Form:</u></h2>
+        <div>
+            <label>Email address :</label>
+            <input size="40px " type="email" name="email" placeholder="Enter email">
+        </div>
+        <div>
+            <label>Name :</label>
+            <input size="40px" type="text" name="name" placeholder="name">
+        </div>
+        <div>
+            <label>Message :</label>
+            <input size="40px" type="text" name="text" placeholder="your message">
+        </div>
+        <div>
+            <input type="checkbox">
+            <label> Check me</label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="ValidateEmail(document.form1.email), lengthRange(document.form1.name), wordCount(document.form1.text)">Submit</button>
+    </form>
+<!--footer-->
+    <footer>
+        <span>&copy; Aitzaz Tahir Ch (19p0012)</span>
+    </footer>
+<!--javascript file-->
+    <script src="javascript.js"></script>
+</body>
+</html>

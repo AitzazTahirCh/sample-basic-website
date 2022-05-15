@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Aitzaz TAhir Ch</title>
+</head>
+<body>
+    <!--Nav bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.pdf">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+          </ul>
+    </nav>
+    <!--form with javascript enabled-->
+    <form name="form1">
+        <h2><u>Contact Me Form:</u></h2>
+        <div>
+            <label>Email address :</label>
+            <input size="40px " type="email" name="email" placeholder="Enter email">
+        </div>
+        <div>
+            <label>Name :</label>
+            <input size="40px" type="text" name="name" placeholder="name">
+        </div>
+        <div>
+            <label>Message :</label>
+            <input size="40px" type="text" name="text" placeholder="your message">
+        </div>
+        <div>
+            <input type="checkbox">
+            <label> Check me</label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="ValidateEmail(document.form1.email), lengthRange(document.form1.name), wordCount(document.form1.text)">Submit</button>
+    </form>
+    <!--javascript file linked-->
+    <script src="javascript.js"></script>
+</body>
+</html>
